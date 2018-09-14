@@ -1,5 +1,6 @@
 // Require dotenv
 require('dotenv').config()
+require('dotenv').load()
 
 // Import our packages
 let express = require('express')

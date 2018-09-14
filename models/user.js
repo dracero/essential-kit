@@ -1,11 +1,11 @@
 // import mogoose
-let mongoose = require('mongoose')
+var mongoose = require('mongoose')
 
 // import promise
 mongoose.Promise = global.Promise
 
 // create a Schema
-let Users = new mongoose.Schema({
+var Users = new mongoose.Schema({
 	email: {
     type: String,
     unique: true,

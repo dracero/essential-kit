@@ -1,10 +1,11 @@
 // Require mongoose
-let mongoose = require('mongoose')
-let User = require('../models/form')
+var mongoose = require('mongoose')
+var User = require('../models/form')
+var Detail = mongoose.model('Detail', Detail)
 
 // Save details
 exports.save = (req, res, next) => {
-  let form = new Detail({
+  var form = new Detail({
     name: req.body.name,
     email: req.body.email,
     address: req.body.address

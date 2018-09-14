@@ -1,6 +1,6 @@
-let express = require('express')
-let Route = express()
-let form = require('../controllers/form-controller')
+var express = require('express')
+var Route = express()
+var form = require('../controllers/form-controller')
 
 // Get index.pug
 Route.get('/', (req, res, next) => {

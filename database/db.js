@@ -1,4 +1,7 @@
 // Require MongoDB
+require('dotenv').config()
+require('dotenv').load()
+
 let mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 

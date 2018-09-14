@@ -1,11 +1,11 @@
 // import mogoose
-let mongoose = require('mongoose')
+var mongoose = require('mongoose')
 
 // import promise
 mongoose.Promise = global.Promise
 
 // create a Schema
-let Detail = new mongoose.Schema({
+var Detail = new mongoose.Schema({
 	name: {
 		type: String,
 		trim: true,
@@ -22,5 +22,4 @@ let Detail = new mongoose.Schema({
 		required: "can not post empty address"
 	}
 })
-
 module.exports = mongoose.model('Detail', Detail)
