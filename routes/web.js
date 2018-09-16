@@ -16,4 +16,11 @@ Route.get('/form', (req, res, next) => {
 // Post request for form data
 Route.post('/form', form.save)
 
+// Get table.pug and pass the csrf token
+Route.get('/table', (req, res, next) => {
+  let csrfToken = req.csrfToken()
+  res.render('table', { csrfToken })
+})
+
+
 module.exports = Route
